@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovateTech Solutions - Digital Transformation Partner</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS (agar kuch override karna ho to) -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+</head>
+<body class="font-sans text-gray-800">
+
+    <!-- Header (Navigation Bar) -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="assets/img/logo.png" alt="InnovateTech Logo" class="h-8">
+                <span class="text-2xl font-bold text-dark-blue">InnovateTech</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-primary transition duration-300">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary transition duration-300">About Us</a>
+                <a href="services.html" class="text-gray-600 hover:text-primary transition duration-300">Services</a>
+                <a href="blog.html" class="text-gray-600 hover:text-primary transition duration-300">Blog</a>
+                <a href="contact.html" class="px-4 py-2 bg-primary text-white rounded-full hover:bg-blue-700 transition duration-300">Contact Us</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu (Hidden by default, toggled by JS) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-4">
+            <a href="index.html" class="block px-6 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="about.html" class="block px-6 py-2 text-gray-700 hover:bg-gray-100">About Us</a>
+            <a href="services.html" class="block px-6 py-2 text-gray-700 hover:bg-gray-100">Services</a>
+            <a href="blog.html" class="block px-6 py-2 text-gray-700 hover:bg-gray-100">Blog</a>
+            <a href="contact.html" class="block px-6 py-2 text-primary hover:bg-gray-100">Contact Us</a>
+        </div>
+    </header>
+    <!-- End Header -->
+
+   <main class="pt-20">
+        <section class="bg-secondary py-16 text-center">
+            <div class="container mx-auto px-6">
+                <h1 class="text-5xl font-extrabold text-dark-blue mb-4 animate-fadeInUp">Our Latest Insights</h1>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto animate-fadeInUp delay-200">
+                    Stay updated with our articles, tutorials, and industry trends.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Blog Post Card 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="assets/img/blog-post-1.jpg" alt="Blog Post Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-primary text-sm font-semibold mb-2 block">Web Development</span>
+                                            <h3 class="text-xl font-bold text-dark-blue mb-3">The Future of Frontend: React vs Vue vs Angular</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            A deep dive into the most popular JavaScript frameworks and their evolving ecosystems for modern web development.
+                        </p>
+                        <a href="#" class="text-primary font-semibold hover:underline">Read More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post Card 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="assets/img/blog-post-2.jpg" alt="Blog Post Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-primary text-sm font-semibold mb-2 block">Mobile Development</span>
+                        <h3 class="text-xl font-bold text-dark-blue mb-3">Building Cross-Platform Apps with Flutter: A Beginner's Guide</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Discover how Flutter can help you build beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.
+                        </p>
+                        <a href="#" class="text-primary font-semibold hover:underline">Read More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post Card 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="assets/img/blog-post-3.jpg" alt="Blog Post Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-primary text-sm font-semibold mb-2 block">Cloud & DevOps</span>
+                        <h3 class="text-xl font-bold text-dark-blue mb-3">Demystifying Kubernetes: A Guide to Container Orchestration</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Understand the core concepts of Kubernetes and how it simplifies the deployment, scaling, and management of containerized applications.
+                        </p>
+                        <a href="#" class="text-primary font-semibold hover:underline">Read More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post Card 4 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="assets/img/blog-post-4.jpg" alt="Blog Post Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-primary text-sm font-semibold mb-2 block">AI & ML</span>
+                        <h3 class="text-xl font-bold text-dark-blue mb-3">Leveraging Machine Learning for Business Growth in 2024</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Explore practical applications of AI and ML, from predictive analytics to intelligent automation, to drive business success.
+                        </p>
+                        <a href="#" class="text-primary font-semibold hover:underline">Read More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post Card 5 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="assets/img/blog-post-5.jpg" alt="Blog Post Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-primary text-sm font-semibold mb-2 block">UI/UX Design</span>
+                        <h3 class="text-xl font-bold text-dark-blue mb-3">The Power of Microinteractions in Enhancing User Experience</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Learn how small, delightful animations and feedback can significantly improve user engagement and satisfaction.
+                        </p>
+                        <a href="#" class="text-primary font-semibold hover:underline">Read More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+
+                <!-- Blog Post Card 6 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                    <img src="assets/img/blog-post-6.jpg" alt="Blog Post Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-primary text-sm font-semibold mb-2 block">Digital Marketing</span>
+                        <h3 class="text-xl font-bold text-dark-blue mb-3">SEO Trends to Watch Out For in the Coming Year</h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Stay ahead of the curve with the latest search engine optimization strategies and best practices.
+                        </p>
+                        <a href="#" class="text-primary font-semibold hover:underline">Read More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pagination or Load More (Optional) -->
+        <div class="container mx-auto px-6 text-center py-8">
+            <button class="px-6 py-3 bg-primary text-white font-semibold rounded-full hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                Load More Articles
+            </button>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-dark-blue text-white py-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Company Info -->
+            <div>
+                <a href="index.html" class="flex items-center space-x-2 mb-4">
+                    <img src="assets/img/logo.png" alt="InnovateTech Logo" class="h-7 filter invert">
+                    <span class="text-xl font-bold">InnovateTech</span>
+                </a>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Driving innovation through cutting-edge technology solutions. Partner with us for digital excellence.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="about.html" class="text-gray-400 hover:text-primary transition duration-300">About Us</a></li>
+                    <li><a href="services.html" class="text-gray-400 hover:text-primary transition duration-300">Our Services</a></li>
+                    <li><a href="blog.html" class="text-gray-400 hover:text-primary transition duration-300">Blog & Insights</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-primary transition duration-300">Contact Support</a></li>
+                </ul>
+            </div>
+
+            <!-- Services Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Our Solutions</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Web Development</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">App Development</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Cloud Services</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">AI & ML</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter & Social -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Stay Connected</h3>
+                <p class="text-gray-400 text-sm mb-4">Subscribe to our newsletter for updates.</p>
+                <form class="flex mb-6">
+                    <input type="email" placeholder="Your Email" class="p-3 rounded-l-md focus:outline-none focus:ring-2 focus:ring-primary bg-gray-700 text-white flex-grow">
+                    <button type="submit" class="bg-primary text-white p-3 rounded-r-md hover:bg-blue-700 transition duration-300">Subscribe</button>
+                </form>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-primary transition duration-300"><i class="fab fa-facebook-f text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition duration-300"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition duration-300"><i class="fab fa-linkedin-in text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-8">
+            &copy; 2023 InnovateTech Solutions. All rights reserved.
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

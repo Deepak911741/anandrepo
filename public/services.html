@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovateTech Solutions - Digital Transformation Partner</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS (agar kuch override karna ho to) -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+</head>
+<body class="font-sans text-gray-800">
+
+    <!-- Header (Navigation Bar) -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="assets/img/logo.png" alt="InnovateTech Logo" class="h-8">
+                <span class="text-2xl font-bold text-dark-blue">InnovateTech</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-primary transition duration-300">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary transition duration-300">About Us</a>
+                <a href="services.html" class="text-gray-600 hover:text-primary transition duration-300">Services</a>
+                <a href="blog.html" class="text-gray-600 hover:text-primary transition duration-300">Blog</a>
+                <a href="contact.html" class="px-4 py-2 bg-primary text-white rounded-full hover:bg-blue-700 transition duration-300">Contact Us</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu (Hidden by default, toggled by JS) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-4">
+            <a href="index.html" class="block px-6 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="about.html" class="block px-6 py-2 text-gray-700 hover:bg-gray-100">About Us</a>
+            <a href="services.html" class="block px-6 py-2 text-gray-700 hover:bg-gray-100">Services</a>
+            <a href="blog.html" class="block px-6 py-2 text-gray-700 hover:bg-gray-100">Blog</a>
+            <a href="contact.html" class="block px-6 py-2 text-primary hover:bg-gray-100">Contact Us</a>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main class="pt-20">
+        <section class="bg-secondary py-16 text-center">
+            <div class="container mx-auto px-6">
+                <h1 class="text-5xl font-extrabold text-dark-blue mb-4 animate-fadeInUp">Our Digital Services</h1>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto animate-fadeInUp delay-200">
+                    Comprehensive solutions tailored to elevate your business in the digital landscape.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Service Item 1: Web Development -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 group">
+                    <div class="text-primary group-hover:text-blue-700 transition duration-300 mb-6">
+                        <i class="fas fa-code text-6xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-dark-blue mb-4">Web Development</h3>
+                    <p class="text-gray-600 mb-6">
+                        From elegant front-end designs to robust back-end systems, we build scalable and secure web applications that power your business.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm mb-6">
+                        <li>Custom Website Design</li>
+                        <li>E-commerce Solutions</li>
+                        <li>CMS Development (WordPress, etc.)</li>
+                        <li>API Integration</li>
+                    </ul>
+                    <a href="#" class="text-primary font-semibold hover:underline">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+
+                <!-- Service Item 2: Mobile App Development -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 group">
+                    <div class="text-primary group-hover:text-blue-700 transition duration-300 mb-6">
+                        <i class="fas fa-mobile-alt text-6xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-dark-blue mb-4">Mobile App Development</h3>
+                    <p class="text-gray-600 mb-6">
+                        Create engaging and user-friendly mobile experiences for iOS and Android, leveraging the latest technologies.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm mb-6">
+                        <li>Native iOS & Android Apps</li>
+                        <li>Cross-Platform Apps (React Native, Flutter)</li>
+                        <li>App UI/UX Design</li>
+                        <li>Maintenance & Support</li>
+                    </ul>
+                    <a href="#" class="text-primary font-semibold hover:underline">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+
+                <!-- Service Item 3: Cloud & DevOps -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 group">
+                    <div class="text-primary group-hover:text-blue-700 transition duration-300 mb-6">
+                        <i class="fas fa-cloud text-6xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-dark-blue mb-4">Cloud & DevOps</h3>
+                    <p class="text-gray-600 mb-6">
+                        Optimize your infrastructure, automate deployments, and ensure scalability with our expert cloud and DevOps services.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm mb-6">
+                        <li>AWS, Azure, GCP Management</li>
+                        <li>CI/CD Pipeline Setup</li>
+                        <li>Containerization (Docker, Kubernetes)</li>
+                        <li>Cloud Security & Monitoring</li>
+                    </ul>
+                    <a href="#" class="text-primary font-semibold hover:underline">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+
+                <!-- Add more service items as needed -->
+                <!-- Service Item 4: UI/UX Design -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 group">
+                    <div class="text-primary group-hover:text-blue-700 transition duration-300 mb-6">
+                        <i class="fas fa-palette text-6xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-dark-blue mb-4">UI/UX Design</h3>
+                    <p class="text-gray-600 mb-6">
+                        Crafting intuitive, engaging, and aesthetically pleasing user interfaces and experiences for all your digital products.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm mb-6">
+                        <li>User Research & Persona Development</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>Visual Design & Branding</li>
+                        <li>Usability Testing</li>
+                    </ul>
+                    <a href="#" class="text-primary font-semibold hover:underline">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+
+                <!-- Service Item 5: Digital Marketing -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 group">
+                    <div class="text-primary group-hover:text-blue-700 transition duration-300 mb-6">
+                        <i class="fas fa-bullhorn text-6xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-dark-blue mb-4">Digital Marketing</h3>
+                    <p class="text-gray-600 mb-6">
+                        Boost your online presence and reach your target audience effectively with our comprehensive digital marketing strategies.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm mb-6">
+                        <li>Search Engine Optimization (SEO)</li>
+                        <li>Social Media Marketing (SMM)</li>
+                        <li>Content Marketing</li>
+                        <li>Paid Advertising (PPC)</li>
+                    </ul>
+                    <a href="#" class="text-primary font-semibold hover:underline">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+
+                <!-- Service Item 6: AI & Machine Learning -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 group">
+                    <div class="text-primary group-hover:text-blue-700 transition duration-300 mb-6">
+                        <i class="fas fa-robot text-6xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-dark-blue mb-4">AI & Machine Learning</h3>
+                    <p class="text-gray-600 mb-6">
+                        Harness the power of artificial intelligence to automate processes, gain insights, and create smart solutions.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-1 text-sm mb-6">
+                        <li>Custom AI Model Development</li>
+                        <li>Data Analytics & Prediction</li>
+                        <li>Chatbot & Virtual Assistant Integration</li>
+                        <li>Automation Solutions</li>
+                    </ul>
+                    <a href="#" class="text-primary font-semibold hover:underline">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-blue text-white py-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Company Info -->
+            <div>
+                <a href="index.html" class="flex items-center space-x-2 mb-4">
+                    <img src="assets/img/logo.png" alt="InnovateTech Logo" class="h-7 filter invert">
+                    <span class="text-xl font-bold">InnovateTech</span>
+                </a>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Driving innovation through cutting-edge technology solutions. Partner with us for digital excellence.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="about.html" class="text-gray-400 hover:text-primary transition duration-300">About Us</a></li>
+                    <li><a href="services.html" class="text-gray-400 hover:text-primary transition duration-300">Our Services</a></li>
+                    <li><a href="blog.html" class="text-gray-400 hover:text-primary transition duration-300">Blog & Insights</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-primary transition duration-300">Contact Support</a></li>
+                </ul>
+            </div>
+
+            <!-- Services Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Our Solutions</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Web Development</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">App Development</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Cloud Services</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">AI & ML</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter & Social -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Stay Connected</h3>
+                <p class="text-gray-400 text-sm mb-4">Subscribe to our newsletter for updates.</p>
+                <form class="flex mb-6">
+                    <input type="email" placeholder="Your Email" class="p-3 rounded-l-md focus:outline-none focus:ring-2 focus:ring-primary bg-gray-700 text-white flex-grow">
+                    <button type="submit" class="bg-primary text-white p-3 rounded-r-md hover:bg-blue-700 transition duration-300">Subscribe</button>
+                </form>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-primary transition duration-300"><i class="fab fa-facebook-f text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition duration-300"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition duration-300"><i class="fab fa-linkedin-in text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-8">
+            &copy; 2023 InnovateTech Solutions. All rights reserved.
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

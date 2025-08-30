@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnovateTech Solutions - Digital Transformation Partner</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS (agar kuch override karna ho to) -->
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+</head>
+<body class="font-sans text-gray-800">
+
+    <!-- Header (Navigation Bar) -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="assets/img/logo.png" alt="InnovateTech Logo" class="h-8">
+                <span class="text-2xl font-bold text-dark-blue">InnovateTech</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-primary transition duration-300">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-primary transition duration-300">About Us</a>
+                <a href="services.html" class="text-gray-600 hover:text-primary transition duration-300">Services</a>
+                <a href="blog.html" class="text-gray-600 hover:text-primary transition duration-300">Blog</a>
+                <a href="contact.html" class="px-4 py-2 bg-primary text-white rounded-full hover:bg-blue-700 transition duration-300">Contact Us</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu (Hidden by default, toggled by JS) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg py-4">
+            <a href="index.html" class="block px-6 py-2 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="about.html" class="block px-6 py-2 text-gray-700 hover:bg-gray-100">About Us</a>
+            <a href="services.html" class="block px-6 py-2 text-gray-700 hover:bg-gray-100">Services</a>
+            <a href="blog.html" class="block px-6 py-2 text-gray-700 hover:bg-gray-100">Blog</a>
+            <a href="contact.html" class="block px-6 py-2 text-primary hover:bg-gray-100">Contact Us</a>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main class="pt-20">
+        <section class="bg-secondary py-16 text-center">
+            <div class="container mx-auto px-6">
+                <h1 class="text-5xl font-extrabold text-dark-blue mb-4 animate-fadeInUp">Get In Touch With Us</h1>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto animate-fadeInUp delay-200">
+                    Have a question or a project in mind? We'd love to hear from you.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6 flex flex-col lg:flex-row gap-12">
+                <!-- Contact Form -->
+                <div class="lg:w-2/3 bg-gray-50 p-8 rounded-lg shadow-lg animate-fadeInLeft">
+                    <h2 class="text-3xl font-bold text-dark-blue mb-6">Send Us A Message</h2>
+                    <form action="submit_contact.php" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Full Name:</label>
+                            <input type="text" id="name" name="name" required
+                                class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email Address:</label>
+                            <input type="email" id="email" name="email" required
+                                class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 text-sm font-bold mb-2">Subject:</label>
+                            <input type="text" id="subject" name="subject"
+                                class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Your Message:</label>
+                            <textarea id="message" name="message" rows="6" required
+                                    class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition duration-200"></textarea>
+                        </div>
+                        <button type="submit"
+                                class="bg-primary hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info & Map -->
+                <div class="lg:w-1/3 space-y-8 animate-fadeInRight">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-dark-blue mb-4">Contact Information</h3>
+                        <ul class="space-y-4 text-gray-700">
+                            <li><i class="fas fa-map-marker-alt text-primary mr-3"></i> 123 Digital Street, Tech City, India</li>
+                            <li><i class="fas fa-envelope text-primary mr-3"></i> info@innovatetech.com</li>
+                            <li><i class="fas fa-phone-alt text-primary mr-3"></i> +91 98765 43210</li>
+                            <li><i class="fas fa-clock text-primary mr-3"></i> Mon - Fri: 9:00 AM - 6:00 PM</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold text-dark-blue mb-4">Find Us On Map</h3>
+                        <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.100998399587!2d77.10173691494519!3d28.70405998240409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d024b4f3b7f1f%3A0x6e7e4a8f9c2e0b6b!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi%20110001!5e0!3m2!1sen!2sin!4v1678912345678!5m2!1sen!2sin"
+                                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-blue text-white py-12">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Company Info -->
+            <div>
+                <a href="index.html" class="flex items-center space-x-2 mb-4">
+                    <img src="assets/img/logo.png" alt="InnovateTech Logo" class="h-7 filter invert">
+                    <span class="text-xl font-bold">InnovateTech</span>
+                </a>
+                <p class="text-gray-400 text-sm leading-relaxed">
+                    Driving innovation through cutting-edge technology solutions. Partner with us for digital excellence.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="about.html" class="text-gray-400 hover:text-primary transition duration-300">About Us</a></li>
+                    <li><a href="services.html" class="text-gray-400 hover:text-primary transition duration-300">Our Services</a></li>
+                    <li><a href="blog.html" class="text-gray-400 hover:text-primary transition duration-300">Blog & Insights</a></li>
+                    <li><a href="contact.html" class="text-gray-400 hover:text-primary transition duration-300">Contact Support</a></li>
+                </ul>
+            </div>
+
+            <!-- Services Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Our Solutions</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Web Development</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">App Development</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">Cloud Services</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-primary transition duration-300">AI & ML</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter & Social -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-white">Stay Connected</h3>
+                <p class="text-gray-400 text-sm mb-4">Subscribe to our newsletter for updates.</p>
+                <form class="flex mb-6">
+                    <input type="email" placeholder="Your Email" class="p-3 rounded-l-md focus:outline-none focus:ring-2 focus:ring-primary bg-gray-700 text-white flex-grow">
+                    <button type="submit" class="bg-primary text-white p-3 rounded-r-md hover:bg-blue-700 transition duration-300">Subscribe</button>
+                </form>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-primary transition duration-300"><i class="fab fa-facebook-f text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition duration-300"><i class="fab fa-twitter text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition duration-300"><i class="fab fa-linkedin-in text-xl"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-8">
+            &copy; 2023 InnovateTech Solutions. All rights reserved.
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
